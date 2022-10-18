@@ -1,0 +1,33 @@
+﻿<Window x:Class="GF.Encoder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GF.Encoder"
+        mc:Ignorable="d"
+        Title="Шифратор.GF" Height="450" Width="800">
+    <Grid Background="CornflowerBlue">
+        <ComboBox x:Name="Encod" HorizontalAlignment="Left" Margin="53,60,0,0" VerticalAlignment="Top" Width="120" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold">
+            <TextBlock>Виженера</TextBlock>
+            <TextBlock>Цезаря</TextBlock>
+        </ComboBox>
+        <TextBox x:Name="Enc" HorizontalAlignment="Left" Margin="430,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="285" Height="137" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="Dec" HorizontalAlignment="Left" Margin="430,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="285" Height="137" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="Encoding" Content="Запуск" HorizontalAlignment="Left" Margin="271,141,0,0" VerticalAlignment="Top" Click="Encoding_Click_1" Width="60" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold" Background="#FF2496EE"/>
+        <TextBox x:Name="Key" HorizontalAlignment="Left" Margin="271,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="Type" HorizontalAlignment="Left" Margin="53,145,0,0" VerticalAlignment="Top" Width="120" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold" >
+            <TextBlock>Зашифровать</TextBlock>
+            <TextBlock>Дешифровать</TextBlock>
+        </ComboBox>
+        <Label Content="Шифры" HorizontalAlignment="Left" Margin="53,37,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Зашифровать/Дешифровать" HorizontalAlignment="Left" Margin="53,119,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Ключ" HorizontalAlignment="Left" Margin="271,37,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Поле для ввода" HorizontalAlignment="Left" Margin="430,32,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Поле для вывода" HorizontalAlignment="Left" Margin="430,213,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.863" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="Lang" HorizontalAlignment="Left" Margin="53,213,0,0" VerticalAlignment="Top" Width="120" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold">
+            <TextBlock>Русский</TextBlock>
+            <TextBlock>Английский</TextBlock>
+        </ComboBox>
+        <Label Content="Язык" HorizontalAlignment="Left" Margin="53,191,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold"/>
+    </Grid>
+</Window>
